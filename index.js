@@ -3,10 +3,6 @@
  * @param {Array} items
  * @returns {Array}
  */
-const removeDuplicateItems = (items) => {
-  const newset = new Set(items);
-  const output = Array.from(newset);
-  return output;
-};
+const removeDuplicateItems = items => Array.from(new Set(items));
 
 module.exports = removeDuplicateItems;
